@@ -10,6 +10,16 @@ https://www.gitbook.com/book/maximdenisov/you-don-t-know-js/
 
 ### JAVASCRIPT cơ bản
 
+#### Code structure
+
+* Statments
+* Semicolons 
+* Comments
+
+### The modern mode, "use strict"
+
+### KIẾN THỨC JAVASCRIPT
+
 #### 1. CALLBACK
 
 * [Giải thích về CALLBACK](https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced)
