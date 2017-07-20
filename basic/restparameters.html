@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<p></p>
+	<script>
+		
+		// p1: only calculate  first 2 numbers
+		// function sum(a, b) {
+		//   return a + b;
+		// }
+
+		// alert( sum(1, 2, 3, 4, 5) );
+		
+		// p2: sum all numbers
+		
+		/* function sumAll(...args) {
+			let sum = 0;
+			for(let arg of args) sum += arg;
+
+			return sum;
+		}
+
+		console.log(sumAll(1));
+		console.log(sumAll(1,2));
+		console.log(sumAll(1,2,3));
+	
+		*/
+		
+		// p3: function with REST parameters
+		function showInfo(firstName, lastName, ...infotitles) {
+			console.log(`This is ${firstName} ${lastName}`);
+			console.log(`His job is: ${infotitles[0]}`);
+			console.log(`Now he is working at ${infotitles[1]}`);
+		}
+		showInfo("Tu","Nguyen","Mobile Developer","Virgo Studio");
+		
+	</script>
+</body>
+</html>
