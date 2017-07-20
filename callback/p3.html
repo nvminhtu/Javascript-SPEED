@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>Có thể mở CONSOLE trong google Developer Tool và type trực tiếp để thử nghiệm hàm Callback</p>
+	<script>
+		// thử 1 ---------------------------------
+		// function doHomework(subject) {
+		//   alert(`Starting my ${subject} homework.`);
+		// }
+
+		// doHomework('math');
+		
+		// thử 2--------------------------------
+		// viết hàm callback và thể hiện trong hàm output
+		// function doHomework(subject, callback) {
+		// 	alert(`Starting my ${subject} homework`);
+		// 	callback();
+		// }
+		// doHomework('math',function(){
+		// 	alert('Finished my homework');
+		// });
+
+		// thử 3 -------------------------------
+		// Calback function don't always have to be defined in our function call. It can be defined elsewhere in our code like this
+		
+		function doHomework(subject, callback) {
+			alert(`Starting my ${subject} homework.`);
+			callback();
+		}
+
+		function alertFinished(){
+			alert('Finished homework hahaha');
+		}
+
+		doHomework('math',alertFinished);
+	</script>
+</body>
+</html>
