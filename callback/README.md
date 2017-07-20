@@ -23,4 +23,6 @@
 
 # How Callback?
 
-
+* See practices
+* Callback can be defined inside function call.
+* Callback can be also defined in a separate function then call as a function in parameter of higher function.
