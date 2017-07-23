@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Assign Method</title>
+</head>
+<body>
+	<script>
+		// kế thừa thuộc tính nghenghiep
+		var nhanvien = { ten: 'dai' };
+		var nghenghiep = { chucvu: 'frontend' };
+
+		//thêm thuộc tính cho nhân viên bằng hàm assign theo cách mới
+		nhanvien = Object.assign(nhanvien, nghenghiep);
+		console.log(nhanvien);
+	</script>
+</body>
+</html>
