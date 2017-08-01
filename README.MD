@@ -48,12 +48,8 @@ https://www.gitbook.com/book/maximdenisov/you-don-t-know-js/
 
 * [CALLBACK HELL và cách né](http://callbackhell.com/)
 
-### 3.PRACTICES
 
-#### 3.1.PTS1 Áp dụng CALLBACK
-
-### 4. CÁC CSS FRAMEWORK hỗ trợ
-
-### 5. THAM KHẢO
+### 3. THAM KHẢO
 
 * [Compatible Table for Javascript](https://kangax.github.io/compat-table/es6/) - HỖ TRỢ XEM TRÌNH DUYỆT HỖ TRỢ
+* [Babel JS](https://babeljs.io/learn-es2015/) - Trang luyện lại các hàm ES6 và áp dụng

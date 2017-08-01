@@ -1,6 +1,6 @@
 # COLLECTION of JAVASCRIPT QUESTIONS
 
-1. require() function in some javascript? what and how?
+### 1. require() function in some javascript? what and how?
 
 ```require() is not part of your standard JavaScript. In context to your question and tags, require() is built into Node.js to load modules. The concept is similar to C/Java/Python/[insert more languages here] imports or includes.
 

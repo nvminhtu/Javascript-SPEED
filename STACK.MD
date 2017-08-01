@@ -5,5 +5,4 @@ Tổng hợp những STACK và Boilerplate
 
 ## LIST OF BOILERPLATE 
 
-* Webpack + ES6
-* 
+* React + Boostrap + Webpack (react-bootstrap-webpack-Boilerplate) => run well
