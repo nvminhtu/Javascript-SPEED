@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Operators</h1>
+
+    <h2>Operand</h2>
+    <ul>
+        <li>Binary</li>
+        <li>Unary</li>
+        <li>Remainder %</li>
+        <li>Exponentiation **</li>
+        <li>Increment/decrement</li>
+        <li>Bitwise Operator</li>
+        <li>Modify-in-place</li>
+        <li>Increment / decrement</li>
+    </ul>
+    
+    <h3>Binary</h3>
+    <script>
+        let x = 2, y = 5;
+        console.log(y-x);
+    </script>
+
+    <h3>Unary</h3>
+    <script>
+        let k = 1;
+        k = -k;
+        console.log(k);
+    </script>
+
+    <h2>String Concatation</h2>
+    <script>
+        let s = "my" + "string";
+        console.log(s); // mystring
+
+        console.log('1'+2);
+        console.log(2 + '1');
+    </script>
+
+    <p>Numberic Conversion, Unary+</p> 
+    <script>
+        let t = 1;
+        console.log(+t); //1 - no conversion for numbers
+
+        let u = true;
+        console.log(+u); // 1 - convert true to 1
+        console.log(+""); // 0 - convert null to 0
+
+    </script>
+    
+    
+    <p>Concatation, Unary+</p>
+    <script>
+        let apple = "2";
+        let orange = "3";
+        console.log(+apple + +orange);
+    </script>
+
+    <h3>Task</h3>
+    <script>
+        let a = 1, b = 1;
+
+        let c = ++a; // 2
+        let d = b++; // 1
+
+        console.log(c);
+        console.log(d);
+    </script>
+
+    <h3>What are the values of var1 and var2 after the code below?</h3>
+    <script>
+        let var1 = 2;
+        let var2 = 1 + (var1 *= 2);
+        console.log(var1); //4
+        console.log(var2); //5
+    </script>
+</body>
+</html>
