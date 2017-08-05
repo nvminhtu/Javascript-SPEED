@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// Contructor in Javscript
+
+		// method 1
+		// set priviledge for user
+		function User(name,isAdmin) {
+		  this.name = name;
+		  this.isAdmin = isAdmin; 
+		}
+
+		// declare contructor
+		let user = new User("Tu Nguyen",true);
+	
+		// return the result
+		console.log(user.name);
+		console.log(user.isAdmin);
+
+		// method 2
+		// return Object
+		function BigUser() {
+			this.name = "John";
+			return { name: "Godzilla" };  // <-- returns an object
+		}
+
+		console.log( new BigUser().name);
+
+		// method 3
+		// function in contructor
+		function UserTravel(name) {
+			this.name = name;
+			this.sayHi = function() {
+				console.log("Say hi to " + this.name);
+			};
+		}
+
+		let newUser = new UserTravel("Tu");
+		console.log(newUser.sayHi());
+	</script>
+</body>
+</html>
