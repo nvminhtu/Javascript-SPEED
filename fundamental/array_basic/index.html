@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Array methods</title>
+</head>
+<body>
+	<script>
+		// method 1
+		let arr = ["Tu","Dai","Tung"];
+
+		// delete an item in array
+		delete arr[1];
+		console.log(arr.length);
+		console.log(arr);
+		
+		// take note:
+		// this way only removes a value by the key.
+
+		// method 2
+		// use splice - add/remove/insert elements
+		// 2.1: remove
+		let arr2 = ["full time","outsource","app dev"];
+		arr2.splice(1,1); // from index 1, remove 1 element.
+		console.log(arr2);
+		
+		// 2.2: replace 
+		let arr3 = ["We","Are","A","Team"];
+		arr3.splice(2,3,"Tech","Net");
+		console.log(arr3);
+
+		// 2.3: return removed array
+		let arr4 = ["React","AngularJS","EmberJS"];
+	 	let removed = arr4.splice(0,2); // from index 0, delete 2 items
+	 	console.log(removed);
+
+	 	// 2.4: insert (without any removals), we must set deleteCount = 0 (number of items to delete)
+	 	let arr5 = ["SASS","LESS","STYLUS","POSTCSS"];
+	 	arr5.splice(2,0,"SCSS","MYTH","CSS-CRUSH","REWORK");
+	 	console.log(arr5.length);
+	 	console.log(arr5);
+	 	console.log(arr5.length);
+	</script>
+</body>
+</html>
