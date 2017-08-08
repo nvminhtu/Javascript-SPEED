@@ -4,38 +4,23 @@
 
 * Follow: [JAVASCRIPT INFO](https://javascript.info/)
 
+## CONTENT
 
-## Nội dung
+## 1.1 FUNDAMENTAL
 
-### 1.JAVASCRIPT cơ bản
+* Basic
+* Array Basic
+* Array Function
+* Callback
+* Contructor
+* Object_basic
+* Object_function
+	
+## 1.2 ES6
 
-#### 1.1 Code structure
-
-* Statements
-* Semicolons 
-* Comments
-
-### 1.2 The modern mode, "use strict"
-### 1.3 Variables
-### 1.4 Data types
-
-* Numbers
-* Strings
-* Boolean
-* Undefined
-* Objects and Symbols
-
-### 1.5 Type Conversions
-### 1.6 Working with functiosn
-
-#### Recursion and stack
-* Interative thinking: the For loop
-* Recursive thinking: Simplify the task and call self
-* Recursive traversals
-* Linked list
-
-#### Rest parameters and spread operator
-
+* string
+* map
+* set
 
 
 ### 2. KIẾN THỨC JAVASCRIPT
