@@ -10,4 +10,5 @@ require('./less/app.less');
 // ES6 code testing
 // require('./es6/cd-import.js');
 // require('./es6/arrow-lexical-this.js');
-require('./es6/string.js');
+// require('./es6/string.js');
+require('./es6/map/map.js');

@@ -1,9 +1,8 @@
 # JAVASCRIPT TRAINING CAMP
 
-## EBOOKS
+## BOOK and TUTORIAL
 
-* Theo cuốn này:
-https://www.gitbook.com/book/maximdenisov/you-don-t-know-js/
+* Follow: [JAVASCRIPT INFO](https://javascript.info/)
 
 
 ## Nội dung
@@ -36,6 +35,7 @@ https://www.gitbook.com/book/maximdenisov/you-don-t-know-js/
 * Linked list
 
 #### Rest parameters and spread operator
+
 
 
 ### 2. KIẾN THỨC JAVASCRIPT
