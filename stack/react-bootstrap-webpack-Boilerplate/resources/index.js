@@ -8,5 +8,6 @@ require('./less/app.less');
 // require('./jsx/App.jsx');
 
 // ES6 code testing
-require('./es6/cd-import.js');
-require('./es6/arrow-lexical-this.js');
+// require('./es6/cd-import.js');
+// require('./es6/arrow-lexical-this.js');
+require('./es6/string.js');

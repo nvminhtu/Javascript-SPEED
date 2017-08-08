@@ -33,3 +33,11 @@ npm run build
 npm run dev
 ```
 Then navigate your browser to [localhost:8080](http://localhost:8080)
+
+# WEBPACK
+```
+* webpack
+* webpack-dev-server
+* Then navigate your browser to [localhost:8080](http://localhost:8080)
+* Go to app folder then see the console.log for testing
+```
