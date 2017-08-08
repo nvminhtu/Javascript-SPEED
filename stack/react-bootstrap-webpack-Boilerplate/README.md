@@ -34,10 +34,17 @@ npm run dev
 ```
 Then navigate your browser to [localhost:8080](http://localhost:8080)
 
-# WEBPACK
+## WEBPACK
 ```
 * webpack
 * webpack-dev-server
 * Then navigate your browser to [localhost:8080](http://localhost:8080)
 * Go to app folder then see the console.log for testing
 ```
+
+## GUIDE WALKTHROUGH
+
+* Code store in `\resources`
+* fundamentals: for basic javscript
+* es6: for coding es6
+* you can code export/import - call by importing to index.js
