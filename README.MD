@@ -22,6 +22,29 @@
 * map
 * set
 
+## CONTINUING
+part 1
+
+----
+* Set
+* WeakMap
+* WeakSet
+* Destructuring
+* JSON
+* Object, keys, values, entries
+* ----
+* part 2: advanced working with function
+* apply()
+* bind()
+* closure()
+* arrow
+* rest operator
+* spread operator
+* global object
+* new Function syntax
+* old `var`
+* Decorator
+* currying and partical
 
 ### 2. KIẾN THỨC JAVASCRIPT
 
