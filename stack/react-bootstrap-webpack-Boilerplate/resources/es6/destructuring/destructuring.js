@@ -44,3 +44,17 @@ gamer.set("age",29);
 for(let [key,value] of gamer.entries()) {
     console.log(`${key}:${value}`);
 }
+
+// the rest '...'
+let [king1,king2, ...rest] = ["Ceasar","Arthur","Napoleon","Alexander","Hung"];
+console.log(king1);
+console.log(king2);
+console.log(rest[0]);
+console.log(rest[1]);
+console.log(rest.length);
+
+// default values
+let [developer="Anonymous",position="Full Stack Developer"] = ["Tu Nguyen"];
+console.log(`Staff: ${developer} - Responsibility: ${position}`);
+
+// default values can be an expression or function call

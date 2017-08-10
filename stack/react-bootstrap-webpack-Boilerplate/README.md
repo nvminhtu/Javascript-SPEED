@@ -47,4 +47,7 @@ Then navigate your browser to [localhost:8080](http://localhost:8080)
 * Code store in `\resources`
 * fundamentals: for basic javscript
 * es6: for coding es6
-* you can code export/import - call by importing to index.js
+* you can code export/import - call by importing to index.
+
+## INSTALL WEBPACK PACKAGE
+* [Add SASS to WEBPACK](https://shellmonger.com/2016/01/19/adding-sass-support-to-webpack/)

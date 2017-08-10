@@ -4,6 +4,9 @@ require('bootstrap/dist/css/bootstrap.css');
 // App styles in Less
 require('./less/app.less');
 
+// App styles in SASS
+require('./scss/app.scss');
+
 // React app
 // require('./jsx/App.jsx');
 
