@@ -47,7 +47,10 @@ Then navigate your browser to [localhost:8080](http://localhost:8080)
 * Code store in `\resources`
 * fundamentals: for basic javscript
 * es6: for coding es6
-* you can code export/import - call by importing to index.
+* You can code export/import - call by importing to index.
+* View result of App build: inside folder `app` - type `live-server` so that you can run the webpage
+* How to update code? in `resource` folder - view `index.js` - it is an entry point. We `require` it so that we can build source to app dist
 
 ## INSTALL WEBPACK PACKAGE
 * [Add SASS to WEBPACK](https://shellmonger.com/2016/01/19/adding-sass-support-to-webpack/)
+
