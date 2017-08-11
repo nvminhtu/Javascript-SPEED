@@ -11,4 +11,5 @@ require('./less/app.less');
 // require('./es6/cd-import.js');
 // require('./es6/arrow-lexical-this.js');
 // require('./es6/string.js');
-require('./es6/map/map.js');
+// require('./es6/map/map.js');
+require('./es6/closure/closure.js');
