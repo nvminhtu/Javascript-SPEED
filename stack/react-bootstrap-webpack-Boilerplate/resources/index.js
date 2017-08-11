@@ -16,8 +16,9 @@ require('./scss/app.scss');
 
 // require('./es6/string.js');
 // require('./es6/map/map.js');
-<<<<<<< HEAD
+// require('./es6/destructuring/destructuring.js');
+
 require('./es6/closure/closure.js');
-=======
-require('./es6/destructuring/destructuring.js');
->>>>>>> 3e70febdf767f97f9a83b71636a33d4a518714a9
+
+
+
