@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WEAKMAP</title>
+</head>
+<body>
+	<script>
+    //object
+    let firstName = {}
+    let career = {}
+    let Farmer = new WeakMap();
+    Farmer.set(firstName, 'Đại');
+    Farmer.set(career, 'frontend');
+    console.log(Farmer.get(firstName));
+    console.log(Farmer.get(career));
+
+    //kiểm tra key có tồn tại
+    console.log(Farmer.has(firstName));
+    console.log(Farmer.has(career));
+
+    //xóa key
+    console.log(Farmer.delete(firstName));
+    console.log(Farmer.delete(career));
+
+    //sau khi xóa
+    console.log(Farmer.get(firstName));
+    console.log(Farmer.get(career));
+
+    //weakmap không thể iterate
+	</script>
+</body>
+</html>

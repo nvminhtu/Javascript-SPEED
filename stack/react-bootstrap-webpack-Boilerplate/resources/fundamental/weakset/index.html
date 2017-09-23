@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WEAKSET</title>
+</head>
+<body>
+	<script>
+    //object
+    let farmer = new WeakSet();
+    let tmp = { firstName: 'Đại' };
+    farmer.add(tmp);
+
+    //kiểm tra key có tồn tại
+    console.log(farmer.has(tmp));
+
+    //weakset không thể iterate nhưng có thể check mảng các giá trị input vào
+    // let labors = [];
+    // labors.push({ firstName: 'Đại' })
+    // labors.push({ firstName: 'qqwwee' })
+    // for(let labor of labors) {
+    //     if(!farmer.has(labor)) {
+    //         console.log('chưa tồn tại');
+    //     }
+    // }
+
+    // //xóa key
+    // console.log(farmer.delete(tmp));
+
+	</script>
+</body>
+</html>
