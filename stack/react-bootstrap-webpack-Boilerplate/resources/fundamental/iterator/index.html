@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ITERATOR</title>
+</head>
+<body>
+  <script>
+    let post = {
+      title: 'es6 is new languge',
+      comment: 'that is true'
+    }
+
+    //define method iterate
+    //Symbol.iterator use to iterate object properties
+    post[Symbol.iterator] = function() {
+      let properties = Object.keys(this);
+      let count = 0;
+      let isDone = false;
+      let next = () => {
+        if(count >= properties.length) {
+          isDone = true;
+        }
+        return { done: isDone, value: this[properties[count++]] };
+      }
+      return { next };
+    }
+    //after transform post variable is still object but it can iterate
+    console.log(typeof post);
+
+    for(let item of post) {
+      console.log(item);
+    }
+
+    let values = [...post];
+    console.log(values);
+
+    let [ newTitle, newComment ] = post;
+    console.log(newTitle);
+    console.log(newComment);
+  </script>
+</body>
+</html>
