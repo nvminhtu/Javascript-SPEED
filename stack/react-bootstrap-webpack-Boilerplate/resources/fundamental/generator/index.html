@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GENERATOR</title>
+</head>
+<body>
+  <script>
+    //Example1: simple
+    function *firstPost () {
+      yield "jquery is popular";
+      yield "that ok";
+    }
+    //we must call firstPost()
+    for(let val of firstPost()) {
+      console.log(val);
+    }
+
+    //Example2: advanced
+    let post = {
+      title: 'es6 is new languge',
+      comment: 'that is true'
+    }
+
+    //define method iterate
+    //Symbol.iterator use to iterate object properties
+    post[Symbol.iterator] = function*() {
+      let properties = Object.keys(this);
+      for(let p of properties) {
+        yield this[p]
+      }
+    }
+    //after transform post variable is still object but it can iterate
+    console.log(typeof post);
+
+    for(let item of post) {
+      console.log(item);
+    }
+
+    let values = [...post];
+    console.log(values);
+
+    let [ newTitle, newComment ] = post;
+    console.log(newTitle);
+    console.log(newComment);
+  </script>
+</body>
+</html>
