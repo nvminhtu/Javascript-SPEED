@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <style>
+    body  {
+      background-color: rgba(0, 0, 0, .2);
+    }
+    kbd {
+      display: block;
+      text-transform: uppercase;
+      font-size: 16px;
+    }
+    .key {
+      box-shadow: 0 0 10px 1px rgba(0, 0, 0, .5);
+      text-align: center;
+      padding: 10px;
+      display: inline-block;
+      color: #fff;
+      font-weight: bold;
+    }
+    .key.playing {
+      box-shadow: 0 0 10px 1px rgba(0, 0, 0, 1);
+      transition: all .5s ease;
+      transform: scale(1.2);
+    }
+  </style>
+  <!-- http://keycode.info/ -->
+  <div class="keys">
+    <div data-key="65" class="key">
+      <kbd>a</kbd>
+      <span class="sound">kick</span>
+    </div>
+  </div>
+  <audio src="kick.wav" data-key="65"></audio>
+<script>
+  function playSound(e) {
+    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+    if(!audio) return;
+    audio.currentTime = 0; // rewind to start
+    audio.play();
+    key.classList.add('playing');
+  }
+
+  function removeTransition(e) {
+    if(e.propertyName !== 'transform') return;
+    this.classList.remove('playing');
+  }
+
+  const keys = document.querySelectorAll(".key");
+  keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+
+  window.addEventListener('keydown', playSound);
+</script>
+</body>
+</html>
