@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <style>
+    body {
+      background-color: rgba(0, 0, 0, .2);
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .clock {
+      width: 30rem;
+      height: 30rem;
+      border 20px solid #fff;
+      border-radius: 50%;
+      margin: 50px auto;
+      position: relative;
+      padding: 2rem;
+      box-shadow: 
+        0 0 0 4px rgba(0,0,0,.1),
+        inset 0 0 0 3px #efefef,
+        inset 0 0 10px #000,
+        0 0 10px rgba(0,0,0,.2);
+    }
+    .clock-face {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform: translateY(-3px);
+    }
+    .hand {
+      width: 50%;
+      height: 6px;
+      background-color: #000;
+      position: absolute;
+      top: 50%;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+      transition: all .05s;
+      transition-timing-function: cubic-bezier(0.01, 2.31, 0.58, 1);
+    }
+    .no-rewind {
+      transition: none;
+    }
+    .hour-hand {
+      background-color: #eee;
+      width: 30%;
+      left: 20%;
+    }
+    .min-hand {
+      background-color: #0e0;
+      width: 40%;
+      left: 10%;
+    }
+  </style>
+  <div class="clock">
+    <div class="clock-face">
+      <div class="hand hour-hand"></div>
+      <div class="hand min-hand"></div>
+      <div class="hand second-hand"></div>
+    </div>
+  </div>
+  <script>
+    const secondHand = document.querySelector('.second-hand');
+    const minsHand = document.querySelector('.min-hand');
+    const hourHand = document.querySelector('.hour-hand');
+    function setDate() {
+      const now = new Date();
+      const seconds = now.getSeconds();
+      const secondsDegrees = ((seconds / 60) * 360) + 90;
+      // reset transition when second hand at 90 deg
+      if(!(secondsDegrees % 90)) secondHand.classList.add('no-rewind');
+      else secondHand.classList.remove('no-rewind');
+      secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+
+      const mins = now.getMinutes();
+      const minsDegrees = ((mins / 60) * 360) + 90;
+      // reset transition when second hand at 90 deg
+      if(!(minsDegrees % 90)) minsHand.classList.add('no-rewind');
+      else minsHand.classList.remove('no-rewind');
+      minsHand.style.transform = `rotate(${minsDegrees}deg)`;
+
+      const hourDegrees = ((mins / 12) * 360) + 90;
+      // reset transition when second hand at 90 deg
+      if(!(hourDegrees % 90)) hourHand.classList.add('no-rewind');
+      else hourHand.classList.remove('no-rewind');
+      hourHand.style.transform = `rotate(${hourDegrees}deg)`;
+    }
+
+    setInterval(setDate, 1000);
+  </script>
+</body>
+</html>
